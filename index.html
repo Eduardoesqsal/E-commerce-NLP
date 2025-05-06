@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades las princesas</title>
+    <link rel="icon" href="logo.JPG" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#nosotros"><i class="fas fa-store"></i> Nosotros</a></li>
+                <li><a href="#productos"><i class="fas fa-shopping-bag"></i> Productos</a></li>
+                <li><a href="#como-llegar"><i class="fas fa-map-marker-alt"></i> Como llegar</a></li>
+                <li><a href="#contacto"><i class="fas fa-phone-alt"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Hero con imagen de fondo -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Novedades las princesas</h1>
+            <p>Descubre los mejores productos de belleza, cuidado personal y más para toda la familia</p>
+            <a href="#contacto" class="btn-primary"><i class="fas fa-phone-alt"></i> Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros mejorada -->
+    <section id="nosotros" class="nosotros">
+        <h2>SOBRE NOSOTROS</h2>
+        <div class="nosotros-grid">
+            <div class="nosotros-img">
+                <img src="imagenes/logo.jpeg" alt="Novedades las Princesas">
+            </div>
+            <div class="nosotros-content">
+                <h3><i class="fas fa-store"></i> Nuestra Historia</h3>
+                <p> NUESTRA HISTORIA
+
+"Novedades las Princesas" abrió sus puertas en enero de 2025 con una visión clara: convertirse en el destino favorito para mujeres que buscan productos de belleza con calidad a precios accesibles.
+
+Desde nuestro primer día, nos hemos comprometido a ofrecer:
+
+Productos cuidadosamente seleccionados de las mejores marcas
+
+Asesoramiento personalizado por expertas en belleza
+
+Innovación constante en nuestro catálogo
+
+Promociones exclusivas para nuestras clientas frecuentes
+
+"Lo que comenzó como un pequeño local se ha transformado, gracias a su preferencia, en un referente de belleza y cuidado personal en la región. Cada producto en nuestros estantes ha sido elegido pensando en realzar la belleza única de cada mujer."
+ <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Productos de Calidad</h4>
+                            <p>Seleccionamos cuidadosamente cada artículo para garantizar su excelencia.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Precios Competitivos</h4>
+                            <p>Ofrecemos los mejores precios sin comprometer la calidad.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Atención Personalizada</h4>
+                            <p>Nuestro equipo está siempre dispuesto a ayudarte.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Satisfacción Garantizada</h4>
+                            <p>Tu satisfacción es nuestra prioridad número uno.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <h2>PRODUCTOS DE BELLEZA</h2>
+        <div class="product-carousel">
+            <!-- Producto 1 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P1.jpg')">
+                <img src="imagenes/P1.jpg" alt="Producto 1">
+                <h3>PALETA DE MAQUILLAJE 1 (PRINCESAS)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P2.jpg')">
+                <img src="imagenes/P2.jpg" alt="Producto 2">
+                <h3>PALETA DE MAQUILLAJE 2 (PRINCESAS)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P3.jpg')">
+                <img src="imagenes/P3.jpg" alt="Producto 3">
+                <h3>PALETA DE MAQUILLAJE 3 (PRINCESAS)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P4.jpg')">
+                <img src="imagenes/P4.jpg" alt="Producto 4">
+                <h3>PALETA DE MAQUILLAJE 4 (PRINCESAS)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P5.jpg')">
+                <img src="imagenes/P5.jpg" alt="Producto 5">
+                <h3>PALETA DE MAQUILLAJE 1 (STICHT)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P6.jpg')">
+                <img src="imagenes/P6.jpg" alt="Producto 6">
+                <h3>PALETA DE MAQUILLAJE 2 (STICHT)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 7 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P7.jpg')">
+                <img src="imagenes/P7.jpg" alt="Producto 7">
+                <h3>PALETA DE MAQUILLAJE 3 (STICHT)</h3>
+                <p>$30.00</p>
+            </div>
+            <!-- Producto 8 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/P8.jpg')">
+                <img src="imagenes/P8.jpg" alt="Producto 8">
+                <h3>PALETA DE MAQUILLAJE 4 (STICHT)</h3>
+                <p>$30.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos de calzado -->
+    <section id="productos-limpieza" class="productos">
+        <h2>CALZADO</h2>
+        <div class="product-carousel">
+            <!-- Producto de calzado 1 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/T1.jpg')">
+                <img src="imagenes/T1.jpg" alt="Producto de limpieza">
+                <h3>PUMA RICKIE BLANCO </h3>
+                <p>$450.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/T2.jpg')">
+                <img src="imagenes/T2.jpg" alt="Producto de limpieza">
+                <h3>NIKE AIR FORCE ONE GRIS/VINO</h3>
+                <p>$350.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/T3.jpg')">
+                <img src="imagenes/T3.jpg" alt="Producto de limpieza">
+                <h3>NIKE AIR FORCE ONE BLANCO/NEGRO </h3>
+                <p>$350.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/T4.jpg')">
+                <img src="imagenes/T4.jpg" alt="Producto de limpieza">
+                <h3>ADIDAS SUPERSTAR </h3>
+                <p>$350.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/T5.jpg')">
+                <img src="imagenes/T5.jpg" alt="Producto de limpieza">
+                <h3>NIKE AIR FORCE ONE GRIS/NEGRO  </h3>
+                <p>$350.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/T6.jpg')">
+                <img src="imagenes/T6.jpg" alt="Producto de limpieza">
+                <h3>NIKE AIR FORCE ONE NEGRO </h3>
+                <p>$350.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ropa -->
+    <section id="productos-perfumes" class="productos">
+        <h2>ROPA</h2>
+        <div class="product-carousel">
+            <!-- Perfume 1 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/c1.jpg')">
+                <img src="imagenes/c1.jpg" alt="Perfume">
+                <h3>CALCETIN ABCDIN 40-46</h3>
+                <p>$15.00 (PAR)</p>
+            </div>
+              <!-- Perfume 1 -->
+              <div class="product-card" onclick="ampliarImagen('imagenes/c2.jpG')">
+                <img src="imagenes/c2.jpG" alt="Perfume">
+                <h3>CALCETINES TEIART 10-13 </h3>
+                <p>$25.00 (PAQUETE)</p>
+            </div>
+              <!-- Perfume 1 -->
+              <div class="product-card" onclick="ampliarImagen('imagenes/c3.jpG')">
+                <img src="imagenes/c3.jpG" alt="Perfume">
+                <h3>CALCETINES FASHION 37-41</h3>
+                <p>$10.00 (PAR)</p>
+            </div>
+              <!-- Perfume 1 -->
+              <div class="product-card" onclick="ampliarImagen('imagenes/c4.jpG')">
+                <img src="imagenes/c4.jpG" alt="Perfume">
+                <h3>CALCETINES FASHION 37-41</h3>
+                <p>$10.00 (PAR)</p>
+            </div>
+             <!-- Perfume 1 -->
+             <div class="product-card" onclick="ampliarImagen('imagenes/c5.jpG')">
+                <img src="imagenes/c5.jpG" alt="Perfume">
+                <h3>CALCETINES FASHION 37-41</h3>
+                <p>$10.00 (PAR)</p>
+            </div>
+             <!-- Perfume 1 -->
+              <div class="product-card" onclick="ampliarImagen('imagenes/c6.jpG')">
+                <img src="imagenes/c6.jpG" alt="Perfume">
+                <h3>CALCETINES FASHION 6-8</h3>
+                <p>$12.00 (PAQUETE)</p>
+            </div>
+              <!-- Perfume 1 -->
+              <div class="product-card" onclick="ampliarImagen('imagenes/C8.jpg')">
+                <img src="imagenes/C8.jpg" alt="Perfume">
+                <h3>CALCETINES FASHION 6-8</h3>
+                <p>$12.00 (PAQUETE)</p>
+            </div>
+              <!-- Perfume 1 -->
+              <div class="product-card" onclick="ampliarImagen('imagenes/C9.jpg')">
+                <img src="imagenes/C9.jpg" alt="Perfume">
+                <h3>CALCETINES FASHION 6-8</h3>
+                <p>$12.00 (PAQUETE)</p>
+            </div>
+             <!-- Perfume 1 -->
+             <div class="product-card" onclick="ampliarImagen('imagenes/c7.jpG')">
+                <img src="imagenes/c7.jpG" alt="Perfume">
+                <h3>CALCETINES ABCDIN 35-40 </h3>
+                <p>$8.00 (PAR)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Artículos para el Cabello -->
+    <section id="productos-cabello" class="productos">
+        <h2>JUGUETES</h2>
+        <div class="product-carousel">
+            <!-- Artículo de cabello 1 -->
+            <div class="product-card" onclick="ampliarImagen('imagenes/J1.jpg')">
+                <img src="imagenes/J1.jpg" alt="Artículo para el cabello">
+                <h3>PISTOLA DE HIDROGEL CON LASER</h3>
+                <p>$75.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J2.jpg')">
+                <img src="imagenes/J2.jpg" alt="Artículo para el cabello">
+                <h3>PISTOLA DE HIDROGEL CON LASER</h3>
+                <p>$75.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J3.jpg')">
+                <img src="imagenes/J3.jpg" alt="Artículo para el cabello">
+                <h3>PISTOLA DE HIDROGEL CON LASER</h3>
+                <p>$75.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J4.jpg')">
+                <img src="imagenes/J4.jpg" alt="Artículo para el cabello">
+                <h3>BALON ECONOMICO</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J5.jpg')">
+                <img src="imagenes/J5.jpg" alt="Artículo para el cabello">
+                <h3>BALON ECONOMICO</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J6.jpg')">
+                <img src="imagenes/J6.jpg" alt="Artículo para el cabello">
+                <h3>BALON ECONOMICO</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J7.jpg')">
+                <img src="imagenes/J7.jpg" alt="Artículo para el cabello">
+                <h3>BALON ECONOMICO</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J9.jpg')">
+                <img src="imagenes/J9.jpg" alt="Artículo para el cabello">
+                <h3>BALON MINI</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J10.jpg')">
+                <img src="imagenes/J10.jpg" alt="Artículo para el cabello">
+                <h3>BALON MINI</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J13.jpg')">
+                <img src="imagenes/J13.jpg" alt="Artículo para el cabello">
+                <h3>BALON MINI</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="product-card" onclick="ampliarImagen('imagenes/J14.jpg')">
+                <img src="imagenes/J14.jpg" alt="Artículo para el cabello">
+                <h3>BALON MINI</h3>
+                <p>$45.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Como Llegar -->
+    <section id="como-llegar" class="como-llegar">
+        <h2>Como llegar</h2>
+        <div class="contenedor-como-llegar">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.86639340962245!2d-98.95691547542809!3d18.89013545933644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6c3baaa468fb%3A0x560b135fff08c8d!2zQ29jaW5hIMKoSmFracKo!5e0!3m2!1ses-419!2smx!4v1746371218170!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Si algo fue de tu agrado, no dudes en enviarme un mensaje por <strong>WhatsApp</strong>.</p>
+        <a href="https://wa.me/5215532739283" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+        </a>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Novedades las princesas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="imagenModal" class="modal">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <img class="modal-content" id="imagenAmpliada">
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        function toggleMenu() {
+          document.querySelector('.nav-menu ul').classList.toggle('show');
+        }
+      </script>
+      
+</body>
+</html>
